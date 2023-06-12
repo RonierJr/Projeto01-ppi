@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>
+        {% block title%}
+        Boas Vindas
+        {% endblock %}
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Stylemenu' %}">
+
+</head>
+
+<body>
+
+    <main>
+
+        {% include 'menu.html' %}
+
+        <div class="container text-center">
+            {% block main %}
+
+            {% endblock %}
+        </div>
+
+    </main>
+</body>
+
+</html>

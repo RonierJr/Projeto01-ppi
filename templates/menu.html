@@ -1,0 +1,20 @@
+{% load static %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+<nav class="navbar">   
+    <header>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'img/logo-ifrn.png' %}" alt="logo ifrn"></a></h1>
+        <div>
+            <ul class="botoes">
+                <li class="menu">
+                    <a href="{% url 'lista_cursos' %}">Cursos</a>
+                </li>
+                <li class="menu">
+                    <a href="#">Saiba Mais</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+</nav>

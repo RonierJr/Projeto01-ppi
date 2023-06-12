@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Detalhe
+{% endblock %}
+
+
+{% block main %}
+<div class="container post">
+    <img class="card-img" src="{{objeto.imagem.url}}" alt="Imagem da Postagem" style="object-fit: cover; height: 100%;">
+    <div class="grid">
+        <h1 class="titulo">{{ objeto.nome }}</h1>
+        <p class="descricao">{{ objeto.descricao }}</p>
+    </div>
+</div>
+
+{% endblock %}
